@@ -383,8 +383,7 @@ if __name__ == '__main__':
     logger = initial_logger()
 
     ''' Parse Command '''
-    # model_name = parseCommandLine(sys.argv[1:])
-    model_name = ".\\model_NCNN.h5"
+    model_name = parseCommandLine(sys.argv[1:])
 
     ''' Initial Converter '''
     k2n_converter = Converter(model_name, logger)
